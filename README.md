@@ -18,4 +18,17 @@ After upgrading termux type below command
 curl -L https://git.io/JiZwx | bash 
 ```
 
+After Installing Kali Linux type below command to login into KaliLinux
+
+```
+proot-distro login kali
+```
+Or, to login with non-root user type
+
+```
+proot-distro login kali --user [username]
+```
+
+replace [username] to ur username and dont forger to remove the brackets.
+
 #Enjoy...
