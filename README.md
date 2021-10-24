@@ -29,6 +29,6 @@ Or, to login with non-root user type
 proot-distro login kali --user [username]
 ```
 
-replace [username] to ur username and dont forger to remove the brackets.
+replace [username] to ur username and dont forget to remove the brackets.
 
 #Enjoy...
