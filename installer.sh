@@ -1,1 +1,1 @@
-pkg update -y && pkg upgrade  -y && pkg in git proot -y && cd $HOME && git clone https://github.com/BDhaCkers009/proot-distro.git  && bash ~/proot-distro/install.sh && rm -rf ~/proot-distro && proot-distro install kali 
+pkg update -y && pkg upgrade  -y && pkg in git proot -y && cd $HOME && git clone https://github.com/BDhaCkers009/proot-distro.git  && cd ~/proot-distro && bash install.sh && cd $HOME && rm -rf ~/proot-distro && proot-distro install kali 
