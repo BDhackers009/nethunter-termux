@@ -12,6 +12,10 @@ Or
 ```
 pkg up -y
 ```
+After upgrading termux type below command 
+
 ```
 curl -L https://git.io/JiZwx | bash 
 ```
+
+#Enjoy...
