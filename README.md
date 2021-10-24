@@ -31,4 +31,11 @@ proot-distro login kali --user [username]
 
 replace [username] to ur username and dont forget to remove the brackets.
 
+After Login to kali linux you must type 
+```
+setup-kali
+```
+note:Do this only for the first time. It will fix all repository and package releated problems.
+
 #Enjoy...
+ 
