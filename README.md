@@ -1,6 +1,6 @@
 
-### This is a modified version of Offcial kali nethunter.
-### With it you can setup a minimal version of nethunter.
+This is a modified version of Offcial kali nethunter.
+With it you can setup a minimal version of nethunter.
 
 # Installation
 To install Nethunter-Termux Minimal version copy below command and paste in ur termux
