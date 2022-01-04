@@ -1,7 +1,7 @@
-# nethunter-termux-minimal
-this is a modified version of Offcial kali nethunter script.with it you can setup a minimal version of nethunter
 
-#Installing
+this is a modified version of Offcial kali nethunter script.With it you can setup a minimal version of nethunter
+
+# Installation
 To install Nethunter-Termux Minimal version copy below command and paste in ur termux
 
 1st things you shoud update and upgrade Termux by
