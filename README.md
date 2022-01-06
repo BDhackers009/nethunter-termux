@@ -23,7 +23,7 @@ curl -L https://git.io/JiZwx | bash
 After Installing Kali Linux type below command to login into KaliLinux as a root user
 
 ```
-proot-distro login kali --bind /dev/null:/proc/sys/kernel/cap_last_last --shared-tmp
+kali
 ```
 # User creation
 
