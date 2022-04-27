@@ -44,7 +44,7 @@ bash user.sh
 After successfully creating user you can simply login to non-root user by below👇 command
 
 ```
-proot-distro login kali --user [username]   --bind /dev/null:/proc/sys/kernel/cap_last_last --shared-tmp
+kali [username]
 ```
 
 replace [username] to ur username and dont forget to remove the brackets.
