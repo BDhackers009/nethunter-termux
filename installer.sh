@@ -18,6 +18,24 @@ print_banner() {
     echo  "################### NetHunter ####################\n\n"
 }
 
+author_info() {
+    print_banner
+    echo
+    echo "        Creator Info     \n"
+    echo 
+    echo "Name: Mustakim Ahmed Sifat (BDhaCkers009)\n"
+    echo
+    echo "Github: https://github.com/BDhaCkers009\n"
+    echo
+    echo "YouTube: Learn Termux"
+    echo
+    echo "Telegram: @bdhackers009"
+    echo ""
+    echo "FaceBook: Mustakim Ahmed Sifat"
+    echo 
+    echo "Wait Your installation will be started soon.."
+    sleep 5
+}
     
 update() {
     yes | pkg update
@@ -115,6 +133,7 @@ install_prootd() {
     fi
 }
 main() {
+    author_info
     print_banner
     check_turmax
     install_pkg
