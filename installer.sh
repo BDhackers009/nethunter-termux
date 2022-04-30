@@ -4,24 +4,24 @@
 # btw the kali banner was copied from offcial Kali Nethunter rootless.
 print_banner() {
     clear
-    echo "##################################################\n"
-    echo "##                                              ##\n"
-    echo "##  88      a8P         db        88        88  ##\n"
-    echo "##  88    .88'         d88b       88        88  ##\n"
-    echo "##  88   88'          d8''8b      88        88  ##\n"
-    echo "##  88 d88           d8'  '8b     88        88  ##\n"
-    echo "##  8888'88.        d8YaaaaY8b    88        88  ##\n"
-    echo "##  88P   Y8b      d8''''''''8b   88        88  ##\n"
-    echo "##  88     '88.   d8'        '8b  88        88  ##\n"
-    echo "##  88       Y8b d8'          '8b 888888888 88  ##\n"
-    echo "##         CREATED BY BDhaCkers009              ##\n"
-    echo  "################### NetHunter ####################\n\n"
+    echo "##################################################"
+    echo "##                                              ##"
+    echo "##  88      a8P         db        88        88  ##"
+    echo "##  88    .88'         d88b       88        88  ##"
+    echo "##  88   88'          d8''8b      88        88  ##"
+    echo "##  88 d88           d8'  '8b     88        88  ##"
+    echo "##  8888'88.        d8YaaaaY8b    88        88  ##"
+    echo "##  88P   Y8b      d8''''''''8b   88        88  ##"
+    echo "##  88     '88.   d8'        '8b  88        88  ##"
+    echo "##  88       Y8b d8'          '8b 888888888 88  ##"
+    echo "##         CREATED BY BDhaCkers009              ##"
+    echo  "################### NetHunter ####################"
 }
 
 author_info() {
     print_banner
     echo
-    echo "        Creator Info     \n"
+    echo "        Creator Info     "
     echo 
     echo "Name: Mustakim Ahmed Sifat (BDhaCkers009)\n"
     echo
