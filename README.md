@@ -80,6 +80,13 @@ __**Issue-01:-**__
 __**FIX-01:-**__
 Now-a-days the kali nethunter has this problem with pip. It's not our problem its a problem of platformdirs utility. However you can fix [this](https://github.com/BDhackers009/fixpip3/blob/main/issue.png?raw=true) error via this [Link](https://github.com/BDhackers009/fixpip3). This problem will be solved in the next update of platformdirs.
 
+## Thanks to
+
+[proot-distro](https://github.com/termux/proot-distro)
+
+## Maintainers
+[**Mustakim Ahmed Sifat**](https://github.com/BDhaCKers009)
+
 # Disclaimer
 Do not forget that you cannot access any of your hardware accessories such as WiFi. Which means you dont have to try running wifi hacking tools etc😂😂.
 But you can use any tool which is not require real root permission 🙂
