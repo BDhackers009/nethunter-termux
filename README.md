@@ -1,11 +1,12 @@
 
-This is a modified version of Offcial kali nethunter.
-With it you can setup a minimal version of nethunter.
+# Introduction
+
+This is a modified version of Kali Nethunter. This project was created to provide a very minimal distribution 
 
 # Installation
 To install Nethunter-Termux Minimal version copy below command and paste in ur termux
 
-1st things you shoud update and upgrade Termux by
+1st things you should update and upgrade Termux by
 ```
 apt update && apt upgrade -y 
 ```
@@ -16,11 +17,11 @@ pkg up -y
 After upgrading termux type below command 
 
 ```
-curl -L https://git.io/JiZwx | bash 
+curl -sL https://git.io/JiZwx | bash 
 ```
 # Login 
 
-After Installing Kali Linux type below command to login into KaliLinux as a root user
+After Installing Kali Linux type below command to login into Kali Linux as a root user
 
 ```
 kali
@@ -41,7 +42,7 @@ Then run the user.sh script using below👇 command
 bash user.sh
 ```
 
-After successfully creating user you can simply login to non-root user by below👇 command
+After successfully creating user you can simply login to non-root user from Termux by using below👇 command
 
 ```
 kali [username]
@@ -55,9 +56,23 @@ Do not forget to update && upgrade kali:
 sudo apt update && apt upgrade -y
 ```
 After doing update and upgrade you can simply use almost any tools in kali linux.
-But do not forget that you cannot access any of your hardware accessories such as WiFi. Which means you dont have to try running wifi hacking tools etc😂😂.
+
+# Video Tutorials:-
+
+**Comming Soon..**
+
+# Issues
+
+__**Issue-01:-**__
+![issue01](https://github.com/BDhackers009/fixpip3/blob/main/issue.png?raw=true)
+
+__**FIX-01:-**__
+Now-a-days the kali nethunter has this problem with pip. It's not our problem its a problem of platformdirs utility. However you can fix [this](https://github.com/BDhackers009/fixpip3/blob/main/issue.png?raw=true) error via this [Link](https://github.com/BDhackers009/fixpip3). This problem will be solved in the next update of platformdirs.
+
+# Disclaimer
+Do not forget that you cannot access any of your hardware accessories such as WiFi. Which means you dont have to try running wifi hacking tools etc😂😂.
 But you can use any tool which is not require real root permission 🙂
 
 
-#Enjoy...
+### If you like this project then dont forget to give a star :)
  
