@@ -36,6 +36,11 @@ check_turmax() {
 
 
 install_pkg() {
+    print_banner
+    echo
+    echo "Installing required Packages.."
+    echo
+    sleep .9
     if [[ ! $(command -v git ) ]]; then
         echo "git is not installed. Installing now.."
         echo
