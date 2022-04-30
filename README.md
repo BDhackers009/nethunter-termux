@@ -1,7 +1,18 @@
 
 # Introduction
 
-This is a modified version of Kali Nethunter. This project was created to provide a very minimal distribution 
+This is a modified version of Kali Nethunter. This project was created to provide a very minimal distribution.
+
+# Features
+
+ * Needed just 1.25 of storage.
+ * Needed just 160 MB of Internet.
+ * Very Easy to use.
+ * Zsh as a default shell.
+ * User creation script so that you dont have to do it manually.
+ * Ready to jump into Bug Hunting or Ethical Hacking.
+ * Supports arm64 and arm both.
+ * Don't need to have a rooted device. Fully run with non-rooted device.
 
 # Installation
 To install Nethunter-Termux Minimal version copy below command and paste in ur termux
