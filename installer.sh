@@ -38,8 +38,8 @@ author_info() {
 }
     
 update() {
-    yes | pkg update
-    yes | pkg upgrade
+    yes | apt update
+    yes |apt upgrade
 }
 check_turmax() {
     if [[ $HOME == /data/data/com.termux/files/home ]]; then
@@ -62,7 +62,7 @@ install_pkg() {
     if [[ ! $(command -v git ) ]]; then
         echo "git is not installed. Installing now.."
         echo
-        yes | pkg install git
+        yes | apt install git
     elif [[ $(command -v git) ]]; then
         echo "git is already installed."
         echo
@@ -70,7 +70,7 @@ install_pkg() {
     if [[ ! $(command -v proot) ]]; then
         echo "proot is not installed. Installing now.."
         echo
-        yes | pkg install proot 
+        yes | apt install proot 
     elif [[ $(command -v proot) ]]; then
         echo "proot is already installed."
         echo
@@ -78,7 +78,7 @@ install_pkg() {
     if [[ ! $(command -v tput) ]]; then
         echo "ncurses-utils is not installed. Installing now.."
         echo
-        yes | pkg install ncurses-utils 
+        yes | apt install ncurses-utils 
     elif [[ $(command -v tput) ]]; then
         echo "ncurses-utils is already installed."
         echo
