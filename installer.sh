@@ -68,6 +68,7 @@ install_pkg() {
         echo
     fi
     if [[ ! $(command -v proot) ]]; then
+        print_banner
         echo "proot is not installed. Installing now.."
         echo
         yes | apt install proot 
@@ -76,6 +77,7 @@ install_pkg() {
         echo
     fi
     if [[ ! $(command -v tput) ]]; then
+        print_banner
         echo "ncurses-utils is not installed. Installing now.."
         echo
         yes | apt install ncurses-utils 
