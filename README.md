@@ -5,7 +5,7 @@ This is a modified version of Kali Nethunter. This project was created to provid
 
 # Features
 
- * Needed just 1.25 of storage.
+ * Needed just 1.25 GB of storage.
  * Needed just 160 MB of Internet.
  * Very Easy to use.
  * Zsh as a default shell.
