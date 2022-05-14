@@ -23,9 +23,9 @@ author_info() {
     echo
     echo "        Creator Info     "
     echo 
-    echo "Name: Mustakim Ahmed Sifat (BDhaCkers009)\n"
+    echo "Name: Mustakim Ahmed Sifat (BDhaCkers009)"
     echo
-    echo "Github: https://github.com/BDhaCkers009\n"
+    echo "Github: https://github.com/BDhaCkers009"
     echo
     echo "YouTube: Learn Termux"
     echo
