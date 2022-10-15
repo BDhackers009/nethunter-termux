@@ -89,7 +89,7 @@ Now-a-days the kali nethunter has this problem with pip. It's not our problem it
 
 # Disclaimer
 Do not forget that you cannot access any of your hardware accessories such as WiFi. Which means you dont have to try running wifi hacking tools etc😂😂.
-But you can use any tool which is not require real root permission 🙂
+But you can use any tool which does not require real root permission 🙂
 
 
 ### If you like this project then dont forget to give a star :)
