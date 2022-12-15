@@ -1,7 +1,7 @@
 
 # Introduction
 
-This is a modified version of Kali Nethunter. This project was created to provide a very minimal distribution.
+This is a modified version of Kali Nethunter. This project was created to provide a very minimal and working nethunter environment. This project is only for non rooted users.
 
 # Features
 
