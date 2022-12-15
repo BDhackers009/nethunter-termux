@@ -10,7 +10,7 @@ This is a modified version of Kali Nethunter. This project was created to provid
  * Very Easy to use.
  * User creation script so that you dont have to do it manually.
  * Ready to jump into Bug Hunting or Ethical Hacking.
- * Supports arm64 and arm both.
+ * Supports arm64/aarch64,amd64,i386 and arm/armhf.
  * Don't need to have a rooted device. Fully run with non-rooted device.
 
 # Installation
