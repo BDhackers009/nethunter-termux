@@ -2,6 +2,8 @@
 # written BY BDhaCkers009
 # If you copy then give me credit.
 # btw the kali banner was copied from offcial Kali Nethunter rootless.
+# PATH VARIABLES
+INSTALLED_ROOTFS_DIR="/data/data/com.termux/files/var/lib/proot-distro/installed-rootfs"
 print_banner() {
     clear
     echo "##################################################"
@@ -39,7 +41,7 @@ author_info() {
     
 update() {
     yes | apt update
-    yes |apt upgrade
+    yes | apt upgrade
 }
 check_turmax() {
     if [[ $HOME == /data/data/com.termux/files/home ]]; then
@@ -49,6 +51,14 @@ check_turmax() {
         echo "LOL.You are not using Termux."
         echo ""
         exit 1
+    fi
+}
+
+is_distro_installed() {
+    if [ -e "${INSTALLED_ROOTFS_DIR}/${1}/bin" ]; then
+        return 0
+    else
+        return 1
     fi
 }
 
@@ -134,6 +144,14 @@ install_prootd() {
         cd $HOME && git clone https://github.com/BDhaCkers009/proot-distro.git  && cd ~/proot-distro && bash install.sh && cd $HOME && rm -rf ~/proot-distro
     fi
 }
+
+create_user() {
+    echo "Creating User for Kali Nethunter (Required)"
+    echo 
+    echo
+    proot-distro login kali -- bash /etc/user.sh 
+    echo
+}
 main() {
     author_info
     print_banner
@@ -141,5 +159,6 @@ main() {
     install_pkg
     install_prootd
     install_nh
+    create_user
 }
 main
