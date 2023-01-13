@@ -86,12 +86,12 @@ install_pkg() {
         echo "proot is already installed."
         echo
     fi
-    if [[ ! $(command -v aria2c) ]]; then
+    if [[ ! $(command -v wget) ]]; then
         print_banner
         echo "aria2 is not installed. Installing now.."
         echo
-        yes | apt install aria2
-    elif [[ $(command -v aria2c) ]]; then
+        yes | apt install wget
+    elif [[ $(command -v wget) ]]; then
         echo "aria2 is already installed."
         echo
     fi
