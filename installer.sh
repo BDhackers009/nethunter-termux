@@ -86,6 +86,15 @@ install_pkg() {
         echo "proot is already installed."
         echo
     fi
+    if [[ ! $(command -v aria2c) ]]; then
+        print_banner
+        echo "aria2 is not installed. Installing now.."
+        echo
+        yes | apt install aria2
+    elif [[ $(command -v aria2c) ]]; then
+        echo "aria2 is already installed."
+        echo
+    fi
     if [[ ! $(command -v tput) ]]; then
         print_banner
         echo "ncurses-utils is not installed. Installing now.."
