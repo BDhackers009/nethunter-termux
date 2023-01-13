@@ -70,33 +70,40 @@ install_pkg() {
     echo
     sleep .9
     if [[ ! $(command -v git ) ]]; then
+        echo
         echo "git is not installed. Installing now.."
         echo
         yes | apt install git
     elif [[ $(command -v git) ]]; then
+        echo
         echo "git is already installed."
         echo
     fi
     if [[ ! $(command -v proot) ]]; then
         print_banner
+        echo
         echo "proot is not installed. Installing now.."
         echo
         yes | apt install proot 
     elif [[ $(command -v proot) ]]; then
+        echo
         echo "proot is already installed."
         echo
     fi
     if [[ ! $(command -v aria2c) ]]; then
         print_banner
+        echo
         echo "aria2 is not installed. Installing now.."
         echo
         yes | apt install aria2
     elif [[ $(command -v aria2c) ]]; then
+        echo
         echo "aria2 is already installed."
         echo
     fi
     if [[ ! $(command -v tput) ]]; then
         print_banner
+        echo
         echo "ncurses-utils is not installed. Installing now.."
         echo
         yes | apt install ncurses-utils 
