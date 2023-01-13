@@ -88,11 +88,11 @@ install_pkg() {
     fi
     if [[ ! $(command -v wget) ]]; then
         print_banner
-        echo "aria2 is not installed. Installing now.."
+        echo "wget is not installed. Installing now.."
         echo
         yes | apt install wget
     elif [[ $(command -v wget) ]]; then
-        echo "aria2 is already installed."
+        echo "wget is already installed."
         echo
     fi
     if [[ ! $(command -v tput) ]]; then
