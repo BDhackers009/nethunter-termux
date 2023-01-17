@@ -177,6 +177,6 @@ main() {
     install_pkg
     install_prootd
     install_nh
-    create_user
+    #create_user
 }
 main
