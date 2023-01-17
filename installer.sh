@@ -162,10 +162,12 @@ install_prootd() {
 }
 
 create_user() {
+    print_banner
+    sleep .6
     echo "Creating User for Kali Nethunter (Required)"
     echo 
     echo
-    proot-distro login kali -- bash /etc/user.sh 
+    proot-distro login kali -- bash user.sh 
     echo
 }
 main() {
@@ -175,6 +177,6 @@ main() {
     install_pkg
     install_prootd
     install_nh
-    #create_user
+    create_user
 }
 main
