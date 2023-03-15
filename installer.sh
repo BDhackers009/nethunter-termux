@@ -40,8 +40,7 @@ author_info() {
 }
     
 update() {
-    yes | apt update
-    yes | apt upgrade
+    yes | pkg up
 }
 check_turmax() {
     if [[ $HOME == /data/data/com.termux/files/home ]]; then
@@ -157,7 +156,7 @@ install_prootd() {
     if [[ -d "/data/data/com.termux/files/home/proot-distro" ]]; then
         rm -rf "/data/data/com.termux/files/home/proot-distro"
     elif [[ ! -d "/data/data/com.termux/files/home/proot-distro" ]]; then
-        cd $HOME && git clone https://github.com/BDhaCkers009/proot-distro.git  && cd ~/proot-distro && bash install.sh && cd $HOME && rm -rf ~/proot-distro
+        cd $HOME && git clone https://github.com/BDhaCkers009/proot-distro.git -b test && cd ~/proot-distro && bash install.sh && cd $HOME && rm -rf ~/proot-distro
     fi
 }
 
