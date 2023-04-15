@@ -20,28 +20,11 @@ print_banner() {
     echo  "################### NetHunter ####################"
 }
 
-print_banner2() {
-    clear
-    local term_cols=$(stty size | awk '{print $2}')
-    local banner_width=$((term_cols < 80 ? term_cols : 80))
-
-    printf '%*s\n' "${banner_width}" '' | tr ' ' '#'
-    printf '##%*s%*s##\n' $(((banner_width - 44) / 2)) '88      a8P         db        88        88' $(((banner_width - 44) / 2 + ((banner_width - 44) % 2))) ''
-    printf '##%*s%*s##\n' $(((banner_width - 44) / 2)) '88    .88\'         d88b       88        88' $(((banner_width - 44) / 2 + ((banner_width - 44) % 2))) ''
-    printf '##%*s%*s##\n' $(((banner_width - 44) / 2)) '88   88\'          d8\'\'8b      88        88' $(((banner_width - 44) / 2 + ((banner_width - 44) % 2))) ''
-    printf '##%*s%*s##\n' $(((banner_width - 44) / 2)) '88 d88           d8\'  \'8b     88        88' $(((banner_width - 44) / 2 + ((banner_width - 44) % 2))) ''
-    printf '##%*s%*s##\n' $(((banner_width - 44) / 2)) '8888\'88.        d8YaaaaY8b    88        88' $(((banner_width - 44) / 2 + ((banner_width - 44) % 2))) ''
-    printf '##%*s%*s##\n' $(((banner_width - 44) / 2)) '88P   Y8b      d8\'\'\'\'\'\'\'\'8b   88        88' $(((banner_width - 44) / 2 + ((banner_width - 44) % 2))) ''
-    printf '##%*s%*s##\n' $(((banner_width - 44) / 2)) '88     \'88.   d8\'        \'8b  88        88' $(((banner_width - 44) / 2 + ((banner_width - 44) % 2))) ''
-    printf '##%*s%*s##\n' $(((banner_width - 44) / 2)) '88       Y8b d8\'          \'8b 888888888 88' $(((banner_width - 44) / 2 + ((banner_width - 44) % 2))) ''
-    printf '##%*s%*s##\n' $(((banner_width - 43) / 2)) 'CREATED BY BDhaCkers009' $(((banner_width - 43) / 2 + ((banner_width - 43) % 2))) ''
-    printf '%*s\n' "${banner_width}" '' | tr ' ' '#'
-}
 
 
 
 author_info() {
-    print_banner2
+    print_banner
     echo
     echo "        Creator Info     "
     echo 
