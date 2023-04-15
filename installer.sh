@@ -127,7 +127,7 @@ check_nh() {
         if [[ $reinstall == "y" || $reinstall == "Y" ]]; then
             echo "Reinstalling Kali..."
             reinstall_nh
-        elif [[ $reinstall == "n" || $reinstall == "N" ]]; then
+        else
             echo
             echo "Exiting script."
             echo
@@ -135,9 +135,24 @@ check_nh() {
             exit 0
         fi
     else
-        install_nh
+        author_info
+        echo "Kali Nethunter is not installed."
+        echo 
+        read -p "Do you want to install Kali? (y/N) " install
+
+        if [[ $install == "y" || $install == "Y" ]]; then
+            echo "Installing Kali..."
+            install_nh
+        else
+            echo
+            echo "Exiting script."
+            echo
+            echo "Happy Hunting"
+            exit 0
+        fi
     fi
 }
+
 
 install_nh() {
     author_info
