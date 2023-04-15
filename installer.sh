@@ -1,6 +1,5 @@
 #!/bin/bash
-# written BY BDhaCkers009
-# If you copy then give me credit.
+
 # btw the kali banner was copied from offcial Kali Nethunter rootless.
 # PATH VARIABLES
 INSTALLED_ROOTFS_DIR="/data/data/com.termux/files/var/lib/proot-distro/installed-rootfs"
