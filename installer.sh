@@ -141,11 +141,8 @@ install_nh() {
             echo "Okay. Happy Hunting."
             exit 1
         else
-            print_banner
-            echo
-            proot-distro install kali
-            echo
-            echo
+           echo "Incorrect choice. Please choose a right option"
+           exit 1
         fi
     else
         print_banner
