@@ -124,7 +124,7 @@ install_nh() {
     echo
     if [[ -d "${rootfs}" ]]; then
         read -p "Seems like you have nethunter installed. DO you want to reinstall [Y/n] " choice
-        if [[ "${choice}" == "Y"  && "${choice}" == "y" && "${choice}" == "" ]]; then
+        if [[ "${choice}" == "Y"  || "${choice}" == "y" || "${choice}" == "" ]]; then
             print_banner
             echo
             echo "Removing Kali Nethunter.."
@@ -136,7 +136,7 @@ install_nh() {
             proot-distro install kali
             echo
             echo
-        elif [[ ${choice} == "n" && ${choice} == "N" ]]; then
+        elif [[ ${choice} == "n" || ${choice} == "N" ]]; then
             echo 
             echo "Okay. Happy Hunting."
             exit 1
