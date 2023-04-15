@@ -39,6 +39,7 @@ print_banner2() {
 }
 
 
+
 author_info() {
     print_banner2
     echo
