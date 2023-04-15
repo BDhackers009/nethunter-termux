@@ -127,7 +127,7 @@ check_nh() {
         if [[ $reinstall == "y" || $reinstall == "Y" ]]; then
             echo "Reinstalling Kali..."
             reinstall_nh
-        elif [[ $reinstall == "n" || $reinstall == "N" || $reinstall == "" ]]; then
+        elif [[ $reinstall == "n" || $reinstall == "N" ]]; then
             echo
             echo "Exiting script."
             echo
