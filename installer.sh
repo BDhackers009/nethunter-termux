@@ -38,6 +38,8 @@ author_info() {
     echo "FaceBook: Mustakim Ahmed Sifat"
     echo 
     echo "Wait Your installation will be started soon.."
+    echo
+    echo
     sleep 5
 }
     
@@ -115,9 +117,41 @@ install_pkg() {
     fi
 }
 
+check_nh() {
+    if [[ -d "/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/kali" ]]; then
+        author_info
+        echo "Kali Nethunter is already installed."
+        echo 
+        read -p "Do you want to reinstall Kali? (y/N) " reinstall
 
+        if [[ $reinstall == "y" || $reinstall == "Y" ]]; then
+            echo "Reinstalling Kali..."
+            reinstall_nh
+        elif [[ $reinstall == "n" || $reinstall == "N" || $reinstall == "" ]]; then
+            echo
+            echo "Exiting script."
+            echo
+            echo "Happy Hunting"
+            exit 0
+        fi
+    else
+        install_nh
+    fi
+}
 
 install_nh() {
+    author_info
+    check_turmax
+    install_pkg
+    install_prootd
+    proot-distro install kali
+
+}
+reinstall_nh() {
+    echo
+    proot-distro remove kali && proot-distro clear-cache && proot-distro install kali
+}
+install_nh_old() {
     rootfs="/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/kali"
     echo 
     echo "Checking if Kali Nethunter is installed."
@@ -178,4 +212,5 @@ main() {
     install_nh
     #create_user
 }
-main
+#main
+check_nh
