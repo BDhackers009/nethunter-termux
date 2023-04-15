@@ -118,7 +118,7 @@ install_pkg() {
 }
 
 check_nh() {
-    if [[ -d "/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/kali" ]]; then
+    if [[ -d "$PREFIX/var/lib/proot-distro/installed-rootfs/kali" ]]; then
         author_info
         echo "Kali Nethunter is already installed."
         echo 
