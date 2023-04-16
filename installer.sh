@@ -154,7 +154,7 @@ check_nh() {
 }
 
 
-install_nh() {
+install_nh_old() {
     author_info
     check_turmax
     install_pkg
@@ -166,7 +166,7 @@ reinstall_nh() {
     echo
     proot-distro remove kali && proot-distro clear-cache && proot-distro install kali
 }
-install_nh_old() {
+install_nh() {
     rootfs="/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/kali"
     echo 
     echo "Checking if Kali Nethunter is installed."
@@ -227,5 +227,5 @@ main() {
     install_nh
     #create_user
 }
-#main
-check_nh
+main
+#check_nh
