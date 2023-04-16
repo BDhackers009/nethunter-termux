@@ -243,6 +243,7 @@ install_nh() {
     fi
 }
 
+
 install_prootd() {
     if [[ -d "/data/data/com.termux/files/home/proot-distro" ]]; then
         rm -rf "/data/data/com.termux/files/home/proot-distro"
