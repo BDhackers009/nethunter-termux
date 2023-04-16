@@ -176,7 +176,7 @@ install_nh_wrong() {
     echo
     if [[ -d "${rootfs}" ]]; then
         read -p "Seems like you have nethunter installed. DO you want to reinstall [Y/n] " choice
-        if [ "${choice}" == "Y"  || "${choice}" == "y" || "${choice}" == "" ]; then
+        if [ "${choice}" == "Y"  || "${choice}" == "y" ]; then
             print_banner
             echo
             echo "Removing Kali Nethunter.."
