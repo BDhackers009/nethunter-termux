@@ -42,7 +42,16 @@ author_info() {
     echo
     sleep 5
 }
-    
+
+
+if [[ -d $INSTALLED_ROOTFS_DIR/kali ]]; then
+    author_info
+    echo
+    echo "KalI Nethunter is already installed"
+    echo
+    exit 1
+fi
+  
 update() {
     yes | apt update
     yes | apt upgrade
