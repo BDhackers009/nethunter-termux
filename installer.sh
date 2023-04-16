@@ -169,7 +169,7 @@ reinstall_nh() {
     echo
     proot-distro remove kali && proot-distro clear-cache && proot-distro install kali
 }
-install_nh() {
+install_nh_wrong() {
     rootfs="/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/kali"
     echo 
     echo "Checking if Kali Nethunter is installed."
@@ -204,6 +204,45 @@ install_nh() {
         echo
     fi
 }
+install_nh() {
+    rootfs="/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/kali"
+    echo 
+    echo "Checking if Kali Nethunter is installed."
+    echo
+    if [[ -d "${rootfs}" ]]; then
+        read -p "Seems like you have nethunter installed. Do you want to reinstall [Y/n] " choice
+        if [[ "${choice}" == "Y"  || "${choice}" == "y" ]]; then
+            print_banner
+            echo
+            echo "Removing Kali Nethunter.."
+            echo
+            proot-distro remove kali && proot-distro clear-cache
+            echo
+            print_banner
+            echo
+            proot-distro install kali
+            echo
+            echo
+        elif [[ ${choice} == "n" || ${choice} == "N" ]]; then
+            echo 
+            echo "Okay. Happy Hunting."
+            exit 1
+        elif [[ -z "${choice}" ]]; then
+            echo "No choice provided. Aborting."
+            exit 1
+        else
+           echo "Incorrect choice. Please choose a valid option (Y/n)."
+           exit 1
+        fi
+    else
+        print_banner
+        echo
+        proot-distro install kali
+        echo
+        echo
+    fi
+}
+
 install_prootd() {
     if [[ -d "/data/data/com.termux/files/home/proot-distro" ]]; then
         rm -rf "/data/data/com.termux/files/home/proot-distro"
