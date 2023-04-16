@@ -47,8 +47,8 @@ author_info() {
 
   
 update() {
-    yes | apt update
-    yes | apt upgrade
+    apt update -y 
+    apt upgrade -y 
 }
 check_turmax() {
     if [[ $HOME == /data/data/com.termux/files/home ]]; then
@@ -80,7 +80,7 @@ install_pkg() {
         echo
         echo "git is not installed. Installing now.."
         echo
-        yes | apt install git
+        apt install git -y
     elif [[ $(command -v git) ]]; then
         echo
         echo "git is already installed."
@@ -91,7 +91,7 @@ install_pkg() {
         echo
         echo "proot is not installed. Installing now.."
         echo
-        yes | apt install proot 
+        apt install proot -y
     elif [[ $(command -v proot) ]]; then
         echo
         echo "proot is already installed."
@@ -102,7 +102,7 @@ install_pkg() {
         echo
         echo "aria2 is not installed. Installing now.."
         echo
-        yes | apt install aria2
+        apt install aria2 -y
     elif [[ $(command -v aria2c) ]]; then
         echo
         echo "aria2 is already installed."
@@ -113,7 +113,7 @@ install_pkg() {
         echo
         echo "ncurses-utils is not installed. Installing now.."
         echo
-        yes | apt install ncurses-utils 
+        apt install ncurses-utils  -y
     elif [[ $(command -v tput) ]]; then
         echo "ncurses-utils is already installed."
         echo
