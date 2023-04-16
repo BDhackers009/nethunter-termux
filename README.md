@@ -27,7 +27,9 @@ pkg up -y
 After upgrading termux type below command 
 
 ```
-curl -sL https://git.io/JiZwx | bash 
+curl -sL https://git.io/JiZwx -o nethunter_install.sh
+
+bash nethunter_install.sh
 ```
 # Login 
 
