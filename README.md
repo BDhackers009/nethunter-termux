@@ -57,7 +57,7 @@ bash user.sh
 After successfully creating user you can simply login to non-root user from Termux by using below👇 command
 
 ```
-kali [username]
+kali --user [username]
 ```
 
 replace [username] to ur username and dont forget to remove the brackets.
