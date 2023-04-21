@@ -24,7 +24,14 @@ Or
 ```
 pkg up -y
 ```
-After upgrading termux type below command 
+After upgrading termux type below command to download and install Kali Nethunter 
+
+```
+bash -c "$(curl -fsSL https://git.io/JiZwx)"
+```
+
+OR
+
 
 ```
 curl -sL https://git.io/JiZwx -o nethunter_install.sh
