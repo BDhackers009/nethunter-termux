@@ -4,7 +4,8 @@
 This is a modified version of Kali Nethunter. This project was created to provide a very minimal and working nethunter environment. This project is only for non rooted users.
 
 # Changelog
-* Upgraded the tarballs to 2026-01-15.
+* Upgraded the tarballs to 2025-12-11.
+* Upgraded the Kali Linux Version to 2025.4
 
 # Features
 
