@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# btw the kali banner was copied from offcial Kali Nethunter rootless.
+# Note: The Kali banner was copied from the official Kali Nethunter rootless.
 # PATH VARIABLES
 INSTALLED_ROOTFS_DIR="/data/data/com.termux/files/var/lib/proot-distro/installed-rootfs"
 print_banner() {
@@ -37,7 +37,7 @@ author_info() {
     echo ""
     echo "FaceBook: Mustakim Ahmed Sifat"
     echo 
-    echo "Wait Your installation will be started soon.."
+    echo "Please wait. Your installation will start soon..."
     echo
     echo
     sleep 5
@@ -55,7 +55,7 @@ check_turmax() {
         update
     else
         echo ""
-        echo "LOL.You are not using Termux."
+        echo "Error: You are not using Termux."
         echo ""
         exit 1
     fi
@@ -73,12 +73,12 @@ is_distro_installed() {
 install_pkg() {
     print_banner
     echo
-    echo "Installing required Packages.."
+    echo "Installing required packages..."
     echo
     sleep .9
     if [[ ! $(command -v git ) ]]; then
         echo
-        echo "git is not installed. Installing now.."
+        echo "git is not installed. Installing now..."
         echo
         apt install git -y
     elif [[ $(command -v git) ]]; then
@@ -89,7 +89,7 @@ install_pkg() {
     if [[ ! $(command -v proot) ]]; then
         print_banner
         echo
-        echo "proot is not installed. Installing now.."
+        echo "proot is not installed. Installing now..."
         echo
         apt install proot -y
     elif [[ $(command -v proot) ]]; then
@@ -100,7 +100,7 @@ install_pkg() {
     if [[ ! $(command -v aria2c) ]]; then
         print_banner
         echo
-        echo "aria2 is not installed. Installing now.."
+        echo "aria2 is not installed. Installing now..."
         echo
         apt install aria2 -y
     elif [[ $(command -v aria2c) ]]; then
@@ -111,7 +111,7 @@ install_pkg() {
     if [[ ! $(command -v tput) ]]; then
         print_banner
         echo
-        echo "ncurses-utils is not installed. Installing now.."
+        echo "ncurses-utils is not installed. Installing now..."
         echo
         apt install ncurses-utils  -y
     elif [[ $(command -v tput) ]]; then
@@ -134,7 +134,7 @@ check_nh() {
             echo
             echo "Exiting script."
             echo
-            echo "Happy Hunting"
+            echo "Happy hunting!"
             exit 0
         fi
     else
@@ -150,7 +150,7 @@ check_nh() {
             echo
             echo "Exiting script."
             echo
-            echo "Happy Hunting"
+            echo "Happy hunting!"
             exit 0
         fi
     fi
@@ -210,11 +210,11 @@ install_nh() {
     echo "Checking if Kali Nethunter is installed."
     echo
     if [[ -d "${rootfs}" ]]; then
-        read -p "Seems like you have nethunter installed. Do you want to reinstall [Y/n] " choice
+        read -p "It looks like Nethunter is already installed. Do you want to reinstall? [Y/n] " choice
         if [[ "${choice}" == "Y"  || "${choice}" == "y" ]]; then
             print_banner
             echo
-            echo "Removing Kali Nethunter.."
+            echo "Removing Kali Nethunter..."
             echo
             proot-distro remove kali && proot-distro clear-cache
             echo
@@ -225,13 +225,13 @@ install_nh() {
             echo
         elif [[ ${choice} == "n" || ${choice} == "N" ]]; then
             echo 
-            echo "Okay. Happy Hunting."
+            echo "Okay. Happy hunting!"
             exit 1
         elif [[ -z "${choice}" ]]; then
             echo "No choice provided. Aborting."
             exit 1
         else
-           echo "Incorrect choice. Please choose a valid option (Y/n)."
+           echo "Invalid choice. Please choose a valid option (Y/n)."
            exit 1
         fi
     else
@@ -255,7 +255,7 @@ install_prootd() {
 create_user() {
     print_banner
     sleep .6
-    echo "Creating User for Kali Nethunter (Required)"
+    echo "Creating user for Kali Nethunter (Required)"
     echo 
     echo
     proot-distro login kali -- bash user.sh 
