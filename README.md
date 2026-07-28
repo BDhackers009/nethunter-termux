@@ -5,7 +5,7 @@ This is a modified version of Kali Nethunter. This project was created to provid
 
 # Changelog
 * Upgraded the tarballs to 2026-06-29.
-* Upgraded the Kali Linux Version to 2026.2
+* Upgraded the Kali Linux Version to 2026.3
 
 # Features
 
