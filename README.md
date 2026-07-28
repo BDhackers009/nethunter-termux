@@ -10,7 +10,7 @@ This is a modified version of Kali Nethunter. This project was created to provid
 # Features
 
  * Requires only 1.25 GB of storage.
- * Requires only 170 MB of internet data.
+ * Requires only 131 MB for the rootfs file.
  * Very easy to use.
  * User creation script so you don't have to do it manually.
  * Ready to jump into bug hunting or ethical hacking.
